@@ -13,8 +13,7 @@ void main() {
   menu['water'] = 0.75;
   print(menu);
 
-  print('Menu');
-  print('');
+  print('Menu: \n');
   for (var meal in menu.entries) {
     print('${meal.key} -> ${meal.value}KD');
   }
@@ -28,5 +27,15 @@ void main() {
   }
   print('KD${total}');
 
+  //OR order.forEach((meal) => total += menu[meal]); ! after menu[meal] ! to ignore type num
+
 // Unavailable Items
+
+  // order.forEach((meal) {
+  //   if (menu[meal] != null) {
+  //     total += menu[meal];
+  //   } else {
+  //     print('${meal} is NOT on the menu!');
+  //   }
+  // });
 }
